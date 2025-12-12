@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+body {
+    background-color:#faf9ed;
+    color: rgb(105, 93, 19);
+    font-family: Garamond, serif;
+    font-size: 22px;
+    line-height: 2em;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container h1{
+    font-size: 60;
+}
+
+.container #main h1{
+    color:#000;
+}
+
+#main-header {
+    background-color: #0d164e;
+    color: #fff;
+    font-style: italic;
+    font-weight: 400;
+}
+#navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#navbar a:hover{
+    color: greenyellow;
+}
+
+#showcase {
+    background-image: url(../images/ratatouille.jpg);
+    background-position: center right;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.image-align {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 5px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.image-align img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.gallery-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    padding-top: 29px;
+}
+
+.gallery-heading::before,
+.gallery-heading::after {
+    content: "";
+    flex: 1;
+    border-top: 2px solid #333;
+}
+
+#gallery {
+    font-size: 50px;
+    font-family: "Petit Formal Script", cursive;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0;
+}
+
+#sidebar{
+    margin-top: 60px;
+    background-color: #5660ab;
+    color:#d7d4ee;
+}
+
+#sidebar a{
+    color:#d7d4ee;
+}
+
+#sidebar a:hover{
+    color: greenyellow;
+}
+
+#sidebar h1{
+    color: #fff;
+}
+
+#main-footer{
+    background-color: #0d164e;
+    color: #fff;
+}
+
+#main-footer h1{
+    font-style: italic;
+    font-size: 30px;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items .dish {
+    flex: 1;
+}
+
+.menu-items .dots {
+    flex: 1;
+    border-bottom: 1px dotted #999;
+    /* dotted line between */
+    margin: 0 10px;
+}
+
+.menu-items .price {
+    font-weight: bold;
+}
+
+.menu-heading {
+    color:#000;
+    font-family: "Petit Formal Script", cursive;
+    font-weight: 400;
+    border-bottom: #000 dotted 1px;
+    padding-top: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.form h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: "Petit Formal Script", cursive;
+    font-weight: 400;
+    color: #0d164e;
+    text-align: center;
+}
+
+.form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form input[type="submit"] {
+    background-color: #5660ab;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    /* center the button */
+    transition: background-color 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0d164e;
+}
+
+.radio-option label {
+    background: #f0f0f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+    /* hide default circle */
+}
+
+.radio-option input[type="radio"]:checked+label {
+    background: #5660ab;
+    color: #fff;
+}
+
+.rats{
+    font-size: 18px;
+    color: #5f5656;
+}
