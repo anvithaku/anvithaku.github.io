@@ -2,6 +2,27 @@ import { useState } from 'react';
 
 function Contact() {
     const [helpType, setHelpType] = useState('');
+    // Submit handler
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // prevent page reload
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch("http://localhost:5000/api/data", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ helpType, ...data }),
+            });
+
+            const result = await response.json();
+            console.log("Server response:", result);
+            alert("Form submitted successfully!");
+        } catch (err) {
+            console.error("Error submitting form:", err);
+        }
+    };
+
 
     return (
         <div className="container">
